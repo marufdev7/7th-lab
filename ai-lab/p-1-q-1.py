@@ -6,6 +6,7 @@ b = int(input("Enter second number: "))
 print("Addition =", a + b)
 print("Multiplication =", a * b)
 
+# Output
 # Enter first number: 5
 # Enter second number: 15
 # Addition = 20
