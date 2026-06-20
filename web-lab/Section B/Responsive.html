@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Page</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      header, nav, section, footer {
+        border: 1px solid black;
+        padding: 10px;
+      }
+
+      .container {
+        display: flex;
+      }
+
+      section {
+        flex: 1;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>Header</header>
+
+    <nav>Navigation Bar</nav>
+
+    <div class="container">
+      <section>Content Area 1</section>
+      <section>Content Area 2</section>
+    </div>
+
+    <footer>Footer</footer>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms</title>
+</head>
+<body>
+
+<h2>Student Information Form</h2>
+
+<form action="save.php" method="post">
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email"><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address"></textarea><br><br>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="Male" id="male">
+    <label for="male">Male</label>
+    <input type="radio" name="gender" value="Female" id="female">
+    <label for="female">Female</label>
+    <br><br>
+
+    Skills:
+    <input type="checkbox" name="skills[]" value="HTML" id="html">
+    <label for="html">HTML</label>
+    <input type="checkbox" name="skills[]" value="CSS" id="css">
+    <label for="css">CSS</label>
+    <input type="checkbox" name="skills[]" value="PHP" id="php">
+    <label for="php">PHP</label>
+    <br><br>
+
+    Department:
+    <select name="department">
+        <option value="CSE">CSE</option>
+        <option value="EEE">EEE</option>
+        <option value="BBA">BBA</option>
+    </select>
+    <br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
